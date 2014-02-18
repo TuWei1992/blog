@@ -43,6 +43,7 @@ $(document).ready(function(){
         <li><a href="/freestyle_blog/admin/page">Home</a></li>
           <li><a href="/freestyle_blog/admin/tags">标签</a></li>
            <li class="active"><a href="/freestyle_blog/admin/type">类型</a></li>
+            <li><a href="/freestyle_blog/admin/images">image</a></li>
           <li><a href="/freestyle_blog/admin/putarticle">添加文章</a></li>
          
           <li><a href="logoutsession"> 退出登录</a></li>
