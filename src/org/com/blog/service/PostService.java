@@ -1,5 +1,7 @@
 package org.com.blog.service;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,6 +17,7 @@ import org.nutz.ioc.loader.annotation.Inject;
 import org.nutz.ioc.loader.annotation.IocBean;
 import org.nutz.mvc.annotation.By;
 import org.nutz.mvc.annotation.Filters;
+import org.nutz.mvc.annotation.Param;
 import org.nutz.mvc.filter.CheckSession;
 
 
@@ -64,14 +67,29 @@ public class PostService implements IPostService {
 	}
 
 	@Override
-	public int modify(Post post, int[] tagIds) {
-		// TODO Auto-generated method stub
+	public int modify( int id,String title,String content,
+			 int top, String status, String type,String tags,
+			String abstracts) {
+		Post post = dao.fetch(Post.class,id);
+		SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+	    Date d =new Date();
+	    String time =format.format(d);
+		post.setId(id);
+		post.setTitle(title);
+		post.setContent(content);
+		post.setTop(top);
+		post.setStatus( status);
+		post.setType(type); 
+		post.setTags(tags);
+		post.setAbstracts(abstracts);
+		post.setAddtime(time);
+		dao.update(post);
 		return 0;
 	}
 
 	@Override
 	public int remove(int id) {
-		// TODO Auto-generated method stub
+		dao.delete(Post.class,id);
 		return 0;
 	}
 

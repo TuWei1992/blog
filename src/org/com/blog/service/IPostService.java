@@ -47,7 +47,9 @@ public interface IPostService {
 	public int add(Post post, int[] tagIds);
 
 	/** 修改 */
-	public int modify(Post post, int[] tagIds);
+	public int modify( int id,String title,String content,
+			 int top, String status, String type,String tags,
+			String abstracts);
 
 	/** 删除 */
 	public int remove(int id);

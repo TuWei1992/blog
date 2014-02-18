@@ -65,7 +65,7 @@ $(document).ready(function(){
       
          <div class="article">
             <h2> <span>${obj.title}</h2>
-            <p><span>&nbsp;&bull;&nbsp;</span> 文章类型: <a href="#">${obj.type}</a>&nbsp;&bull;&nbsp标签: <a href="#">${obj.tags}</a> <span>&nbsp;&bull;&nbsp;时间:</span> ${obj.addtime} <span></p>
+            <p><span>&nbsp;&bull;&nbsp;</span> 文章类型: <a href="#">${obj.type}</a>&nbsp;&bull;&nbsp标签: <a href="#">${obj.tags}</a> <span>&nbsp;&bull;&nbsp;时间:</span> ${obj.addtime} &nbsp;&bull;&nbsp;(<a href="/freestyle_blog/admin/change/${obj.id}">修改</a>&nbsp;&bull;&nbsp;<a href="/freestyle_blog/admin/delete/${obj.id}">删除</a>)</p>
             <p>${obj.content} </p>
             <p></p>
              
@@ -136,9 +136,9 @@ $(document).ready(function(){
     <div class="footer_resize">
       <p class="lf">Â© Copyright <a href="#">MyWebSite</a>. Layout from [Z] <a href="http://www.cssmoban.com/" title="ç½é¡µæ¨¡æ¿">cssMoban.com</a></p>
       <ul class="fmenu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li class="active"><a href="blog.html">Blog</a></li>
+        <li><a href="/freestyle_blog/admin/page">Home</a></li>
+        <li><a href="/freestyle_blog/admin/tags">标签</a></li>
+        <li class="active"><a href="/freestyle_blog/admin/type">类型</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contacts</a></li>
       </ul>

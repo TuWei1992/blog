@@ -23,7 +23,7 @@ public class PostEdit extends AdminOAuthHandler {
 		if (id == 0) {
 			id = postservice.add(post, tagIds);
 		} else {
-			postservice.modify(post, tagIds);
+			//postservice.modify(post, tagIds);
 		}
 
 //		renderString(String.valueOf(id));

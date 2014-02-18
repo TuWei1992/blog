@@ -73,7 +73,7 @@ $(document).ready(function(){
           </#if>
           -->
           <p>${post.abstracts}</p>                   
-          <div class="more"><a href="article/${post.id}" class="rm">阅读全文</a> </div>
+          <div class="more"><a href="/freestyle_blog/admin/article/${post.id}" class="rm">阅读全文</a> </div>
           </div>  
           </#list>
           
