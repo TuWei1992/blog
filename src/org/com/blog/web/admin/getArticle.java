@@ -84,19 +84,18 @@ public class getArticle extends AdminOAuthHandler {
 	     * 
 	     * @author zhimeiyue
 	     */
-	    @At("admin/update/?")
+	    @At("admin/update")
 		@Ok("fm:/WEB-INF/templates/html/blog.ftl")
 		@Filters(@By(type=CheckSession.class, args={"name", "/index.jsp"}))
-		public Post updatebyid(@Param("title") String title,@Param("content1") String content,
+		public Post updatebyid(@Param("id") int ids,@Param("title") String title,@Param("content1") String content,
 				@Param("top") int top,@Param("stauts") String status,@Param("type") String type,@Param("tags") String tags,
-				@Param("abstracts") String abstracts,int id){
-	        postservice.modify(id, title, content, top, status, type, tags, abstracts);
-	    	Post list=postservice.getById(id);
+				@Param("abstracts")String abstracts ,ServletContext context,HttpServletResponse resp) throws Throwable{
+	        postservice.modify(ids, title, content, top, status, type, tags, abstracts);
+	    	Post list=postservice.getById(ids);
 	    	return list;
 	}
 	    
-	    
-	    /**
+	      /**
 	     * 删除文章
 	     * 
 	     * @author zhimeiyue

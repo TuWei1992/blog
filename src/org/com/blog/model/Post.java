@@ -22,7 +22,6 @@ public class Post implements java.io.Serializable {
 	@Id
 	private int id;
 	
-	@Name
 	private String title = "";
 	private String content = "";
 	private String addtime;
