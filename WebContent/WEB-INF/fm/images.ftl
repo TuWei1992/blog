@@ -33,7 +33,7 @@ Released for free under a Creative Commons Attribution 3.0 License
     </div>
   </div>
 
-<a  style="position: absolute; top: 0; left: 0; border: 0;"  href="/freestyle_blog/admin/page">Home</a>
+<a  style="position: absolute; top: 0; left: 0; border: 0;"  href="${base}/page">Home</a>
 
   <div class="container">
 

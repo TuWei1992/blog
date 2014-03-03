@@ -79,9 +79,23 @@
 
       </div>
 
-      <footer>
+     
+      
+        <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Â© Copyright <a href="#">MyWebSite</a>. Layout from [Z] <a href="http://www.cssmoban.com/" title="ç½é¡µæ¨¡æ¿">cssMoban.com</a></p>
+      <ul class="fmenu">
+        <li><a href="/freestyle_blog/admin/page">Home</a></li>
+        <li><a href="/freestyle_blog/admin/tags">标签</a></li>
+        <li class="active"><a href="/freestyle_blog/admin/type">类型</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+      </ul>
+      <div class="clr"></div>
+    </div>
+    
        
-      </footer>
+     
 
     </div> <!-- /container -->
 

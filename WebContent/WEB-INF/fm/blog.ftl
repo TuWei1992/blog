@@ -42,12 +42,10 @@ $(document).ready(function(){
       <div class="logo"><h1><a href="index.html">free style <small>I have pledged to do my best</small></a></h1></div>
       <div class="menu_nav">
         <ul>
-         <li><a href="/freestyle_blog/admin/page">Home</a></li>
-          <li><a href="/freestyle_blog/admin/tags">标签</a></li>
-           <li class="active"><a href="/freestyle_blog/admin/type">类型</a></li>
-          <li><a href="/freestyle_blog/admin/putarticle">添加文章</a></li>    
-         
-          <li><a href="/freestyle_blog/admin/logoutsession"> 退出登录</a></li>
+         <li><a href="${base}/page">Home</a></li>
+          <li><a href="${base}/tags">标签</a></li>
+           <li class="active"><a href="${base}/type">类型</a></li>
+
         </ul>
       </div>
       <div class="clr"></div>
