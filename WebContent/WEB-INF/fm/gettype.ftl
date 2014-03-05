@@ -29,10 +29,10 @@
   
 <div class="container">
 <div class="content">      
-<div class="page-header">
-   <h1>Categories </h1>
 
-</div>
+ <!--------  <div class="page-header"><h1>Categories </h1></div>---->
+
+
 
 <div class="row">
   <div class="span12">

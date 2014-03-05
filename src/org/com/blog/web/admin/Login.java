@@ -57,7 +57,7 @@ public class Login extends BlogHandler {
 		}
 	}
  @At("admin/index")
- @Ok("fm:/WEB-INF/templates/html/index.ftl")
+ //@Ok("fm:/WEB-INF/templates/html/index.ftl")
  public Map<String, Object> post(@Param("name") String username,@Param("password") String password,HttpServletRequest request,HttpServletResponse response) throws Throwable {
 		String name = username.trim().intern();
 		String pd = password.trim().intern();

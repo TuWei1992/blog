@@ -26,7 +26,7 @@
 
 <div class="content">
         
-<div class="page-header"><h2>tags </h2></div>
+<!----------<div class="page-header"><h2>tags </h2></div>--------->
 
 <div class="row">
  <div class="span12">

@@ -8,15 +8,15 @@
 <link href="${base}/css/navbar-fixed-top.css" type="text/css" rel="stylesheet" media="all">
 <link href="${base}/css/style_tag.css" type="text/css" rel="stylesheet" media="all">
 
-
-
+<script type="text/javascript" src="${base}/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="${base}/js/bootstrap.min.js"></script>
 
 
 <#--代码高亮--->
 <link type="text/css" rel="stylesheet" href="${base}/css/shCoreDefault.css"  />
 <link type="text/css" rel="stylesheet" href="${base}/css/shCore.css"  />
 <link type="text/css" rel="stylesheet" href="${base}/css/shThemeDefault.css"  />
-<script type="text/javascript" src="${base}/js/jquery-1.8.0.min.js"></script>
+
 <script type="text/javascript" src="${base}/js/shCore.js"></script>
 <script type="text/javascript" src="${base}/js/shBrushJScript.js"></script>
 <script type="text/javascript" src="${base}/js/brush.js"></script>
@@ -26,6 +26,8 @@ $(document).ready(function(){
 	
 	SyntaxHighlighter.all();
 });
+
+
 </script>
 </head>
 <body>
@@ -35,6 +37,9 @@ $(document).ready(function(){
     
 <!---------引入导航文件-------->
   <#include "nav.ftl">
+    
+ 
+    
     
     
     
