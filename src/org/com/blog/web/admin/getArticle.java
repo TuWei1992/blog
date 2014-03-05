@@ -45,7 +45,7 @@ public class getArticle extends AdminOAuthHandler {
 	     * 
 	     * @author zhimeiyue
 	     */
-	    @At("admin/getart/?")
+	    @At("admin/getartss/?")
 		@Ok("fm:/WEB-INF/fm/goarticle.ftl")
 		@Filters(@By(type=CheckSession.class, args={"name", "/index.jsp"}))
 		public List<Post> type_title(String type){
@@ -57,7 +57,7 @@ public class getArticle extends AdminOAuthHandler {
 	     * 
 	     * @author zhimeiyue
 	     */
-	    @At("admin/article/?")
+	    @At("admin/articless/?")
 		@Ok("fm:/WEB-INF/templates/html/blog.ftl")
 		@Filters(@By(type=CheckSession.class, args={"name", "/index.jsp"}))
 		public Post getarticlebyid(int id,
@@ -71,7 +71,7 @@ public class getArticle extends AdminOAuthHandler {
 	     * 
 	     * @author zhimeiyue
 	     */
-	    @At("admin/change/?")
+	    @At("admin/changess/?")
 		@Ok("fm:/WEB-INF/templates/html/changepage.ftl")
 		@Filters(@By(type=CheckSession.class, args={"name", "/index.jsp"}))
 		public Post changebyid(int id){

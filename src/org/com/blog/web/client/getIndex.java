@@ -45,40 +45,6 @@ public class getIndex  {
      private TagService tagservice;
     
     
-  
-	
-	
-// @At("admin/index")
-// @Ok("fm:/WEB-INF/templates/html/index.ftl")
-// public Map<String, Object> post(@Param("name") String username,@Param("password") String password,HttpServletRequest request,HttpServletResponse response) throws Throwable {
-//		String name = username.trim().intern();
-//		String pd = password.trim().intern();
-//		if (checkLogin(name, pd)) {
-//	      session = request.getSession(); 
-//          session.setAttribute("name", name); 
-//		
-//		} else {
-//			
-//		  response.sendRedirect("fail.jsp");	
-//		  
-//		}
-//		
-//		int initcount=1;
-//		Map<String, Object> map=new HashMap<String, Object>();
-//    	List<Type> type= typeservice.queryType();
-//    	//List<Post> article=postservice.queryPublishPost();
-//    	List<Post> article=postservice.searchByPage(Post.class, initcount, 10, "id");
-//    	List<Tag>  tags=tagservice.queryAll();
-//    	map.put("type", type);
-//    	map.put("tag",tags);
-//    	map.put("article", article);
-//    	map.put("pagecount", postservice.getPagerCount(Post.class, initcount, 10));
-//    	map.put("initcount",1 );
-//    	return map;
-//		
-//	}
-     
-     
      
  @At("page")
  @Ok("fm:/WEB-INF/fm/index.ftl")
@@ -86,7 +52,6 @@ public class getIndex  {
        int initcount=1;
 		Map<String, Object> map=new HashMap<String, Object>();
     	List<Type> type= typeservice.queryType();
-    	//List<Post> article=postservice.queryPublishPost();
     	List<Post> article=postservice.searchByPage(Post.class,initcount, 10, "id");
     	List<Tag>  tags=tagservice.queryAll();
     	map.put("type", type);
@@ -94,10 +59,9 @@ public class getIndex  {
     	map.put("article", article);
     	map.put("pagecount", postservice.getPagerCount(Post.class, initcount, 10));
     	map.put("initcount",1 );
-    	return map;
-		
+    	return map;	
 	}
- @At("page/?")
+ @At("/page/?")
  @Ok("fm:/WEB-INF/fm/index.ftl")
  public Map<String, Object> shang_index(int count){
        //总页数,超越页数处理
@@ -122,23 +86,7 @@ public class getIndex  {
     	return map;
 		
 	}
-// @At("admin/user/?")
-// @Ok("fm:/WEB-INF/templates/html/index.ftl")
-// public Map<String, Object> xia_index(int count){
-// 
-//		Map<String, Object> map=new HashMap<String, Object>();
-//    	List<Type> type= typeservice.queryType();
-//    	//List<Post> article=postservice.queryPublishPost();
-//    	List<Post> article=postservice.searchByPage(Post.class,count-1, 10, "id");
-//    	List<Tag>  tags=tagservice.queryAll();
-//    	map.put("type", type);
-//    	map.put("tag",tags);
-//    	map.put("article", article);
-//    	map.put("pagecount", postservice.getPagerCount(Post.class, count-1, 10));
-//    	return map;
-//		
-//	}
-//	   
+   
 
 
 	

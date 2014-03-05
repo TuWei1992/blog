@@ -16,10 +16,10 @@ import org.nutz.mvc.filter.CheckSession;
 
 @IocBean
 @InjectName
-public class GetImage  {
+public class Get_Image  {
 	
 	   
-	   @At("admin/images")
+	   @At("images")
 	   @Ok("fm:/WEB-INF/fm/images.ftl")
 	   
 	   public void getimage(){

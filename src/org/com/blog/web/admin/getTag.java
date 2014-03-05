@@ -26,7 +26,7 @@ public class getTag extends AdminOAuthHandler{
    @Inject
    private PostService postservice;
    
-   @At("admin/tags")
+   @At("admin/tagsss")
    @Ok("fm:/WEB-INF/templates/html/gettags.ftl")
  
    @Filters(@By(type=CheckSession.class, args={"name", "/index.jsp"}))

@@ -1,19 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--
-Design by http://www.FreeWebsiteTemplateZ.com
-Released for free under a Creative Commons Attribution 3.0 License
--->
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title></title>
+<title>wonder4</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link href="${base}/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
+<link href="${base}/css/navbar-fixed-top.css" type="text/css" rel="stylesheet" media="all">
 <link href="${base}/css/style_tag.css" type="text/css" rel="stylesheet" media="all">
-<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/arial.js"></script>
-<script type="text/javascript" src="js/cuf_run.js"></script>
-<!-- CuFon ends -->
+
+
+
 
 
 <#--代码高亮--->
@@ -35,21 +31,13 @@ $(document).ready(function(){
 <body>
 
 
-   <div class="header">
-    <div class="header_resize">
-      <div class="logo"><h1><a href="index.html">free style <small>I have pledged to do my best</small></a></h1></div>
-      <div class="menu_nav">
-        <ul>
-        <li><a href="${base}/pages">Home</a></li>
-          <li><a href="${base}/tags">标签</a></li>
-           <li><a href="${base}/types">类型</a></li>
-            <li><a href="${base}/images">image</a></li>
-         
-        </ul>
-      </div>
-      <div class="clr"></div>
-    </div>
-  </div>
+
+    
+<!---------引入导航文件-------->
+  <#include "nav.ftl">
+    
+    
+    
 
   <div class="hbg">&nbsp;</div>
 
@@ -72,7 +60,9 @@ $(document).ready(function(){
           </#if>
           -->
           <p>${post.abstracts}</p>                   
-          <div class="more"><a href="${base}/article/${post.id}" class="rm">阅读全文</a> </div>
+          
+
+          <div class="more"> <a href="${base}/article/${post.id}" ><button type="button" class="btn btn-success">阅读全文</button></a> </div>
           </div>  
           </#list>
           
@@ -80,26 +70,14 @@ $(document).ready(function(){
           <#assign pagernum= obj["initcount"]>
           <p class="pages">Page ${pagernum} of  <#assign pagercount= obj["pagecount"] > ${pagercount}  &nbsp;&nbsp;&nbsp; <a href="${base}/page/1">首页</a> <#if pagernum ==1 > <#assign prenum=pagernum+1></#if>  <a href="${base}/page/<#if pagernum== 1>${prenum-1}<#else>${pagernum-1}</#if>">&lt&lt</a><span>${pagernum}</span>    <#if pagernum ==pagercount> <#assign pagernum=pagernum-1></#if>   <a href="${base}/page/${pagernum+1}">&gt&gt;</a></p>
 
-           
+         
       
       <div class="clr"></div>
     </div>
   </div>
 
- <#---footer----->
-  <div class="footer">
-    <div class="footer_resize">
-      <p class="lf">© Copyright <a href="#">MyWebSite</a>. Layout from [Z] <a href="http://www.cssmoban.com/" title="网页模板">cssMoban.com</a></p>
-      <ul class="fmenu">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Contacts</a></li>
-      </ul>
-      <div class="clr"></div>
-    </div>
-  </div>
+<!---------引入footer文件-------->
+  <#include "footer.ftl">
   
   
   

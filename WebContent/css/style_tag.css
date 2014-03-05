@@ -5,8 +5,8 @@ html, body {
 .navbar {
   margin-bottom: 0;
 }
-.navbar .container{ 
-  width:940px;
+.container{ 
+  width:960px;
 }
 .container > footer {
   margin-top: 20px;
@@ -90,7 +90,7 @@ html, body {
 .header_resize { margin:0 auto; padding:0; width:940px;}
 
 /* hbg */
-.hbg { background:url(../images/hbg_img.jpg) no-repeat center top; height:262px;}
+.hbg { background:url(../images/hbg_img.jpg) no-repeat center top; height:262px; }
 
 /* menu */
 .menu_nav { margin:0; padding:30px 0 0; float:right;}
@@ -104,7 +104,7 @@ html, body {
 h1 { margin:0; padding:24px 0; color:#49b6e9; font:normal 48px/1.2em Arial, Helvetica, sans-serif; letter-spacing:-1px;}
 h1 a, h1 a:hover { color:#49b6e9; text-decoration:none;}
 p { margin:8px 0; padding:0 0 8px 0; font:normal 12px/1.8em Arial, Helvetica, sans-serif;}
-h2 { font:normal 24px Arial, Helvetica, sans-serif; padding:8px 0; margin:8px 0; color:#49b6e9}
+h2 { font:normal 24px Arial, Helvetica, sans-serif; padding:8px 0; margin:8px 0; }
 h1 small { display:block; padding:0 0 0 120px; font:normal 13px/1.2em Arial, Helvetica, sans-serif; color:#b7b7b7; letter-spacing:normal;}
 
 
@@ -134,7 +134,7 @@ h1 small { display:block; padding:0 0 0 120px; font:normal 13px/1.2em Arial, Hel
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
 
-/*�Ķ����*/
+/*锟侥讹拷锟斤拷锟�/
 
 .more :hover{background:#57BE8F;}
 .more a {
@@ -147,7 +147,7 @@ h1 small { display:block; padding:0 0 0 120px; font:normal 13px/1.2em Arial, Hel
 }
 
 
-/*����*/
+/*锟斤拷锟斤拷*/
  .article { margin:0; padding:16px 24px 100px 40px;}
 p.date { padding-right:16px; float:left; color:#323a3f; text-align:center;}
 p.date span { display:block; font-size:18px;}
@@ -168,7 +168,7 @@ p.date span { display:block; font-size:18px;}
 
 
 
-/*����*/
+/*锟斤拷锟斤拷*/
 /*inputs*/
 #msform input, #msform textarea {
 	padding: 15px;
@@ -190,7 +190,7 @@ p.date span { display:block; font-size:18px;}
 .write-blog .o-input{height: 18px;margin:0px;padding:3px 5px;}
 .write-blog .t-input{width:98%;height:65px;}
 .write-blog .m-input{width:90%;min-height:450px;height:auto;}
-.write-blog .s-button{width:200px;background:#428BD1;height:32px;border:none;color:#FFF;margin-right:10px;font-size:14px;font-family:'微软雅黑','Verdana','sans-serif','宋体';cursor:pointer;}
+.write-blog .s-button{width:200px;background:#428BD1;height:32px;border:none;color:#FFF;margin-right:10px;font-size:14px;font-family:'寰蒋闆呴粦','Verdana','sans-serif','瀹嬩綋';cursor:pointer;}
 .write-blog .s-button:hover{background:#3270AC;}
 .write-blog .blog-title{position:relative;}
 .write-blog .blog-title .catalog{position: absolute;right: 10px;top: 10px;display: inline-block;height: 22px;line-height: 22px;overflow: hidden;cursor:pointer;color:#FFF;z-index: 1000;}

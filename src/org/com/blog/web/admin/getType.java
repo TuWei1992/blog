@@ -37,7 +37,7 @@ public class getType extends AdminOAuthHandler {
 	     * @author zhimeiyue
 	     * @return 
 	     */
-	        @At("admin/type")
+	        @At("admin/typess")
 	 		@Ok("fm:/WEB-INF/templates/html/gettype.ftl")
 	 		@Filters(@By(type=CheckSession.class, args={"name", "/index.jsp"}))
 	 		public Map<String, Object> gettype(String type){

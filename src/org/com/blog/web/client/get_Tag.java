@@ -20,13 +20,13 @@ import org.nutz.mvc.filter.CheckSession;
 
 @IocBean
 @InjectName
-public class getTag {
+public class get_Tag {
    @Inject
    private TagService tagservice;
    @Inject
    private PostService postservice;
    
-   @At("tags/")
+   @At("tag")
    @Ok("fm:/WEB-INF/fm/gettags.ftl")
 
    public Map<String, Object> gettag(){

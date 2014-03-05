@@ -26,7 +26,7 @@ import org.nutz.mvc.filter.CheckSession;
  */
 @IocBean
 @InjectName
-public class getType  {
+public class get_Type  {
 	 @Inject
 	    private PostService postservice;
 	    @Inject
@@ -37,7 +37,7 @@ public class getType  {
 	     * @author wonder4
 	     * @return 
 	     */
-	        @At("/type")
+	        @At("type")
 	 		@Ok("fm:/WEB-INF/fm/gettype.ftl")
 	 	
 	 		public Map<String, Object> gettype(String type){

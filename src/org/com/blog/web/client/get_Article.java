@@ -21,7 +21,7 @@ import org.nutz.mvc.annotation.Ok;
  */
 @IocBean
 @InjectName
-public class getArticle  {
+public class get_Article  {
 	 @Inject
 	    private PostService postservice;
 	    @Inject

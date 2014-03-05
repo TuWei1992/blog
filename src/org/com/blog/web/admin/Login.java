@@ -85,7 +85,7 @@ public class Login extends BlogHandler {
     	return map;
 		
 	}
- @At("admin/page")
+ @At("admin/pagess")
  @Ok("fm:/WEB-INF/templates/html/index.ftl")
  public Map<String, Object> go_index(){
        int initcount=1;
@@ -102,7 +102,7 @@ public class Login extends BlogHandler {
     	return map;
 		
 	}
- @At("admin/page/?")
+ @At("admin/pagess/?")
  @Ok("fm:/WEB-INF/templates/html/index.ftl")
  public Map<String, Object> shang_index(int count){
        //总页数,超越页数处理
